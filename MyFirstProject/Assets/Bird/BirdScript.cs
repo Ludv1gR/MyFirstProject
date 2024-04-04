@@ -7,6 +7,9 @@ public class BirdScript : MonoBehaviour
     public Rigidbody2D myRigidbody;
     public float flapStrength;
 
+    public Animator animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,11 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true) 
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
+            animator.SetBool("FlapBool", true);
+        }
+        else 
+        {
+            animator.SetBool("FlapBool", false);
         }
         
     }

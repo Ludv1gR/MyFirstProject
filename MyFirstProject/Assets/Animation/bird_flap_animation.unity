@@ -226,9 +226,9 @@ GameObject:
   - component: {fileID: 912239465}
   - component: {fileID: 912239464}
   - component: {fileID: 912239463}
+  - component: {fileID: 912239466}
   - component: {fileID: 912239461}
   - component: {fileID: 912239467}
-  - component: {fileID: 912239466}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -250,6 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 912239463}
   flapStrength: 5.2
+  animator: {fileID: 912239467}
 --- !u!50 &912239463
 Rigidbody2D:
   serializedVersion: 4
@@ -318,7 +319,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4113262857455605547, guid: e06bb7f34c72c45ce9c8bb694abf86c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31556a372e4c148c5ae4468ac02b4c94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -376,25 +377,30 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.16}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.12
---- !u!114 &912239467
-MonoBehaviour:
+--- !u!95 &912239467
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912239460}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CategoryHash: 0
-  m_labelHash: 0
-  m_SpriteKey: 0
-  m_SpriteHash: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 498aefa4c17664a67933c24af2d4bc47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1968229185
 GameObject:
   m_ObjectHideFlags: 0

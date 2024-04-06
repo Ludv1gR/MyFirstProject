@@ -6,7 +6,6 @@ public class BirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public float flapStrength;
-    public Animator animator;
     public LogicScript logic;
     public bool birdIsAlive = true;
 
@@ -22,13 +21,7 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true && birdIsAlive) 
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
-            animator.SetBool("FlapBool", true);
         }
-        else 
-        {
-            animator.SetBool("FlapBool", false);
-        }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision) 

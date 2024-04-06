@@ -542,6 +542,8 @@ MonoBehaviour:
   myRigidbody: {fileID: 912239463}
   flapStrength: 5.2
   animator: {fileID: 912239467}
+  logic: {fileID: 0}
+  birdIsAlive: 1
 --- !u!50 &912239463
 Rigidbody2D:
   serializedVersion: 4
@@ -954,7 +956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipe: {fileID: 5768946239939813207, guid: 9c46c44340da00540a0e70327661dfd5, type: 3}
   spawnRate: 3
-  heightOffset: 4.6
+  heightOffset: 4.2
 --- !u!4 &1968229187
 Transform:
   m_ObjectHideFlags: 0
